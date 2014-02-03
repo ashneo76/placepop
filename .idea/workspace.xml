@@ -442,7 +442,11 @@
       <created>1391452631108</created>
       <updated>1391452631108</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update workspace">
+      <created>1391452642550</created>
+      <updated>1391452642550</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -502,7 +506,8 @@
     <MESSAGE value="Implement basic search ui" />
     <MESSAGE value="Add google and here keys&#10;" />
     <MESSAGE value="Updated gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated gitignore" />
+    <MESSAGE value="Update workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update workspace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
