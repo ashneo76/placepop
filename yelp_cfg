@@ -1,0 +1,10 @@
+consumer:
+  key: 4GXoMAiV_76V0pKFk9QWwQ
+  secret: lOMUCUOxdMJbBxKm0HziCmmOBTA
+token:
+  key: fkSsHeXo5dpCAjPONusfzXlh1TvwdZhe
+  secret: 5sL45K8FKKFDee5yR1ac8SS3_wI
+api:
+  host: api.yelp.com
+  path:
+    search: search
