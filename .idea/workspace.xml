@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c2c5a84-2155-42e9-b3ae-718f8ded0b68" name="Default" comment="">
+    <list default="true" id="3c2c5a84-2155-42e9-b3ae-718f8ded0b68" name="Default" comment="Update workspace">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inputplaces" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -446,7 +446,11 @@
       <created>1391452642550</created>
       <updated>1391452642550</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update workspace">
+      <created>1391452652518</created>
+      <updated>1391452652518</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
