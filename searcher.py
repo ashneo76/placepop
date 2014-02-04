@@ -5,6 +5,7 @@ import optparse
 import json
 import yaml
 import codecs
+import geocode
 
 
 def handle_choices(choices_str, min_val, max_val):
@@ -25,6 +26,9 @@ def handle_choices(choices_str, min_val, max_val):
 				choices_list.append(choice_num)
 			elif choice_num == -1:
 				choices_list = [-1]
+				break
+			elif choice_num == 0:
+				choices_list = [0]
 				break
 
 	return choices_list
@@ -64,6 +68,9 @@ def pretty_address(address_list):
 	pretty_add = ''
 	sep = ', '
 	for line in address_list:
+		line = line.strip()
+		if line.startswith('(') and line.endswith(')'):
+			continue  # skip human readable addresses
 		pretty_add += line + sep
 	return pretty_add[0:-2]
 
@@ -73,6 +80,33 @@ def pretty_categories(category_list):
 	for category in category_list:
 		pretty_cat += category[0] + ','
 	return pretty_cat[0:-1]
+
+
+def sanitize_yelp_business(buzinezz):
+	business = {}
+	business['name'] = buzinezz['name']
+	business['is_closed'] = buzinezz['is_closed']
+	if not 'location' in buzinezz or not 'display_address' in buzinezz['location']:
+		business['display_address'] = ''
+	else:
+		business['display_address'] = pretty_address(buzinezz['location']['display_address'])
+	if not 'display_phone' in buzinezz:
+		business['display_phone'] = 'N/A'
+	else:
+		business['display_phone'] = buzinezz['display_phone']
+	if not 'categories' in buzinezz:
+		business['categories'] = []
+	else:
+		business['categories'] = pretty_categories(buzinezz['categories'])
+	if not 'rating' in buzinezz:
+		business['rating'] = 0
+	else:
+		business['rating'] = buzinezz['rating']
+	if not 'review_count' in buzinezz:
+		business['review_count'] = 0
+	else:
+		business['review_count'] = buzinezz['review_count']
+	return business
 
 
 def main():
@@ -104,14 +138,14 @@ def main():
 			businesses = response['businesses']
 			print("{0} matches found for {1}".format(len(businesses), s.term))
 			i = 1
-			for business in businesses:
-				try:
-					phone = business['display_phone']
-				except KeyError:
-					phone = 'N/A'
-				print(u'{0}.\t[{5}({6})]\t{1}:\t\t{2} @ \t{3}. \t\tTYPE: {4}'.format(i, business['name'], phone,
-											pretty_address(business['location']['display_address']),
-											pretty_categories(business['categories']), business['rating'],
+			for buzinezz in businesses:
+				business = sanitize_yelp_business(buzinezz)
+				print(u'{0}.\t[{5}({6})]\t{1}:\t\t{2} @ \t{3}. \t\tTYPE: {4}'.format(i,
+											business['name'],
+											business['display_phone'],
+											business['display_address'],
+											business['categories'],
+											business['rating'],
 											business['review_count']))
 				i += 1
 			if len(businesses) > 0:
@@ -120,14 +154,17 @@ def main():
 					break
 
 				for choice in choices:
-					business = businesses[int(choice)-1]
-					try:
-						phone = business['display_phone']
-					except KeyError:
-						phone = 'N/A'
-					fout.write(u'{0}|{1}|{2}|{3}/5|{4}|{5}|{6}\n'.format(business['name'], phone,
-										pretty_address(business['location']['display_address']), business['rating'],
-										business['review_count'], business['is_closed'], pretty_categories(business['categories'])))
+					buzinezz = businesses[int(choice)-1]
+					business = sanitize_yelp_business(buzinezz)
+					fout.write(u'{0}|{1}|{2}|{7}|{3}/5|{4}|{5}|{6}\n'.format(
+										business['name'],
+										business['display_phone'],
+										business['display_address'],
+										business['rating'],
+										business['review_count'],
+										business['is_closed'],
+										business['categories'],
+										geocode.geo_encode(business['display_address'])[0]['coords']))
 			else:
 				fout.write(u'{0}|-1'.format(place))
 			count += 1
