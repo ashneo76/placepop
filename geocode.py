@@ -6,9 +6,10 @@
 #
 # Author: Ashish Shah (ashneo76@gmail.com)
 
-import urllib, urllib2
+import urllib
+import urllib2
 import simplejson as sj
-import sys, optparse
+import optparse
 
 geocode_url = 'https://maps.googleapis.com/maps/api/geocode/json?sensor=true&'
 
@@ -45,16 +46,17 @@ def geo_encode(address):
     else:
         return status
 
-def geodecode(latlng):
+
+def geo_decode(latlng):
     global geocode_url
-    query = geocode_url+'latlng='+latlng
+    query = geocode_url + 'latlng=' + latlng
     resp_file = urllib2.urlopen(query)
     resp_str = resp_file.read()
     # print resp_str
     resp_j = sj.loads(resp_str)
     status = resp_j['status']
 
-    if(status == 'OK'):
+    if status == 'OK':
         results = resp_j['results']
         matches = ""
         for res in results:
@@ -80,26 +82,27 @@ def geodecode(latlng):
             matches = matches + res['formatted_address'] + '\n'
         return matches[:-1]
         #print results
-    elif(status == 'ZERO_RESULTS'):
+    elif status == 'ZERO_RESULTS':
         return '0 results'
     else:
         return status
+
 
 if __name__ == '__main__':
     parser = optparse.OptionParser('''
 Google Geocode API Interface
         Geocodes an address or reverse geocodes a location using Google Maps API.
         Example: geocode -l <lat,long> OR geocode -a <address>''')
-    parser.add_option("-l","--location", dest="loc", action="store_true",
-                        help="Comma separated <latitude,longitude> pair")
-    parser.add_option("-a","--address", dest="loc", action="store_false", default=False,
-                        help="Address string")
+    parser.add_option("-l", "--location", dest="loc", action="store_true",
+                      help="Comma separated <latitude,longitude> pair")
+    parser.add_option("-a", "--address", dest="loc", action="store_false", default=False,
+                      help="Address string")
     (options, args) = parser.parse_args()
     #print args
 
     try:
         if options.loc:
-            print(geodecode(args[0]))
+            print(geo_decode(args[0]))
         else:
             print(geo_encode(args[0]))
     except urllib2.URLError:
