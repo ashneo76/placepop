@@ -7,6 +7,7 @@ import yaml
 import codecs
 import geocode
 import hashlib
+import sys
 
 
 def handle_choices(choices_str, min_val, max_val):
@@ -117,19 +118,23 @@ def identify_business(business):
 
 def main():
     parser = optparse.OptionParser('''
-Google Geocode API Interface
-        Geocodes an address or reverse geocodes a location using Google Maps API.
-        Example: geocode -l <lat,long> OR geocode -a <address>''')
-    parser.add_option("-i", "--input", dest="infile", 
+Places API Interface (Yelp/HERE/Google/Foursquare)
+        Looks up a place and finds information about it using seleted service.
+        Example: ''')
+    parser.add_option("-i", "--input", dest="infile", default=None,
                       help="YAML array list input file")
-    parser.add_option("-o", "--output", dest="outfile", 
+    parser.add_option("-o", "--output", dest="outfile", default=None,
                       help="Output file")
-    parser.add_option("-l", "--lookup", dest="search_terms", 
+    parser.add_option("-l", "--lookup", dest="lookup", default=None,
                       help="Search terms as CSV list")
     parser.add_option("-p", "--pretty", dest="pretty", action="store_true", default=False,
                       help="Pretty format or standard format")
-    parser.add_option("-s", "--source", dest="source",
+    parser.add_option("-s", "--source", dest="source", default="yelp",
                       help="Business data provider")
+    parser.add_option("-c", "--city", dest="city", default="chicago",
+                      help="location to search in: city/country/area code")
+    parser.add_option("-a", "--auto", dest="auto", default="-1",
+                      help="Take top n results automatically")
 
     (options, args) = parser.parse_args()
     fout = None
@@ -141,64 +146,94 @@ Google Geocode API Interface
         s = yelp_search.Search()
 
         # file input
-        places = yaml.load(file('inputplaces'))
-        fout = codecs.open('outputplaces', 'w+', encoding="UTF-8")
+        if options.lookup is not None:
+            places = options.lookup.split(',')
+        elif options.infile is not None:
+            places = yaml.load(file(options.infile))
+        else:
+            print("No search input specified")
+            exit(1)
 
-        # search settings
-        provider = 'yelp'
-        s.location = 'chicago'
+        if options.source is not None:
+            provider = options.source
+        else:
+            print("No search source provided.")
+            exit(2)
 
-        max_places = len(places)
-        count = 0
-        for place in places:
-            count += 1
-            print('[{1}/{2}] Looking up: {0}'.format(place, count, max_places))
-            s.term = place
-            response = yelp_search.request(host=host, path=path,
-                            url_params=s.get_url_params(),
-                            consumer_key=yelp_cfg['consumer']['key'],
-                            consumer_secret=yelp_cfg['consumer']['secret'],
-                            token=yelp_cfg['token']['key'],
-                            token_secret=yelp_cfg['token']['secret'])
+        if options.city is not None:            # search settings
+            s.location = options.city
+        else:
+            print("No lookup location provided")
+            exit(3)
 
-            businesses = response['businesses']
-            print("{0} matches found for {1}".format(len(businesses), s.term))
-            i = 1
-            for buzinezz in businesses:
-                business = sanitize_yelp_business(buzinezz)
-                print(u'{0}.\t[{5}({6})]\t{1}:\t\t{2} @ \t{3}. \t\tTYPE: {4}'.format(i,
+        if options.outfile is not None:
+            fout = codecs.open(options.outfile, 'w+', encoding="UTF-8")
+        else:
+            fout = codecs.open(sys.stdout, 'w+', encoding="UTF-8")  # FIXME: NOT WORKING
+
+        try:
+            auto = [int(options.auto)]  # FIXME: NOT WORKING
+        except ValueError:
+            auto = [-1]
+
+        if provider == 'yelp':
+            max_places = len(places)
+            count = 0
+            for place in places:
+                count += 1
+                print('[{1}/{2}] Looking up: {0}'.format(place, count, max_places))
+                s.term = place
+                response = yelp_search.request(host=host, path=path,
+                                               url_params=s.get_url_params(),
+                                               consumer_key=yelp_cfg['consumer']['key'],
+                                               consumer_secret=yelp_cfg['consumer']['secret'],
+                                               token=yelp_cfg['token']['key'],
+                                               token_secret=yelp_cfg['token']['secret'])
+
+                businesses = response['businesses']
+                print("{0} matches found for {1}".format(len(businesses), s.term))
+                i = 1
+                for buzinezz in businesses:
+                    business = sanitize_yelp_business(buzinezz)
+                    print(u'{0}.\t[{5}({6})]\t{1}:\t\t{2} @ \t{3}. \t\tTYPE: {4}'.format(i,
+                                                business['name'],
+                                                business['display_phone'],
+                                                business['display_address'],
+                                                business['categories'],
+                                                business['rating'],
+                                                business['review_count']))
+                    i += 1
+                if len(businesses) > 0:
+                    if auto[0] == -1:
+                        choices = get_choice('Please choose from the above [0: Skip, -1: Save & quit]: ', 1, len(businesses))
+                        if choices[0] == -1:
+                            break  # stop collecting stuff
+                        elif choices[0] == 0:
+                            continue  # go to the next item
+                    else:
+                        print("Automatically choosing the 1st option... ")
+                        choices = [1]  # default to 1st element for now
+
+                    for choice in choices:
+                        buzinezz = businesses[int(choice)-1]
+                        business = sanitize_yelp_business(buzinezz)
+                        identify_business(business)
+                        fout.write(u'{0}|{1}|{2}|{7}|{3}/5|{4}|{5}|{6}|{8}\n'.format(
                                             business['name'],
                                             business['display_phone'],
                                             business['display_address'],
-                                            business['categories'],
                                             business['rating'],
-                                            business['review_count']))
-                i += 1
-            if len(businesses) > 0:
-                choices = get_choice('Please choose from the above [0: Skip, -1: Save & quit]: ', 1, len(businesses))
-                if choices[0] == -1:
-                    break  # stop collecting stuff
-                elif choices[0] == 0:
-                    continue  # go to the next item
-
-                for choice in choices:
-                    buzinezz = businesses[int(choice)-1]
-                    business = sanitize_yelp_business(buzinezz)
-                    identify_business(business)
-                    fout.write(u'{0}|{1}|{2}|{7}|{3}/5|{4}|{5}|{6}|{8}\n'.format(
-                                        business['name'],
-                                        business['display_phone'],
-                                        business['display_address'],
-                                        business['rating'],
-                                        business['review_count'],
-                                        business['is_closed'],
-                                        business['categories'],
-                                        business['coords'],
-                                        business['uuid']))
-            else:
-                fout.write(u'{0}|-1'.format(place))
+                                            business['review_count'],
+                                            business['is_closed'],
+                                            business['categories'],
+                                            business['coords'],
+                                            business['uuid']))
+                else:
+                    fout.write(u'{0}|-1\n'.format(place))
     except KeyboardInterrupt:
         print('\n')
+    except BaseException as e:
+        print(e.message)
     finally:
         if fout is not None:
             fout.close()
