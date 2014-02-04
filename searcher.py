@@ -139,8 +139,11 @@ def main():
 		for place in places:
 			print('[{1}/{2}] Looking up: {0}'.format(place, count, max_places))
 			s.term = place
-			response = yelp_search.request(host=host, path=path, url_params=s.get_url_params(), consumer_key=yelp_cfg['consumer']['key'],
-							consumer_secret=yelp_cfg['consumer']['secret'], token=yelp_cfg['token']['key'],
+			response = yelp_search.request(host=host, path=path,
+							url_params=s.get_url_params(),
+							consumer_key=yelp_cfg['consumer']['key'],
+							consumer_secret=yelp_cfg['consumer']['secret'],
+							token=yelp_cfg['token']['key'],
 							token_secret=yelp_cfg['token']['secret'])
 
 			businesses = response['businesses']
@@ -159,13 +162,15 @@ def main():
 			if len(businesses) > 0:
 				choices = get_choice('Please choose one of the above: ', 1, len(businesses))
 				if choices[0] == -1:
-					break
+					break  # stop collecting stuff
+				elif choices[0] == 0:
+					continue  # go to the next item
 
 				for choice in choices:
 					buzinezz = businesses[int(choice)-1]
 					business = sanitize_yelp_business(buzinezz)
 					identify_business(business)
-					fout.write(u'{0}|{1}|{2}|{7}|{3}/5|{4}|{5}|{6}\n'.format(
+					fout.write(u'{0}|{1}|{2}|{7}|{3}/5|{4}|{5}|{6}|{8}\n'.format(
 										business['name'],
 										business['display_phone'],
 										business['display_address'],
