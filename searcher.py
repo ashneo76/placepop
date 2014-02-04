@@ -92,8 +92,10 @@ def main():
 		provider = 'yelp'
 		s.location = 'chicago'
 
+		max_places = len(places)
+		count = 1
 		for place in places:
-			print('Looking up: {0}'.format(place))
+			print('[{1}/{2}] Looking up: {0}'.format(place, count, max_places))
 			s.term = place
 			response = yelp_search.request(host=host, path=path, url_params=s.get_url_params(), consumer_key=yelp_cfg['consumer']['key'],
 							consumer_secret=yelp_cfg['consumer']['secret'], token=yelp_cfg['token']['key'],
@@ -107,9 +109,10 @@ def main():
 					phone = business['display_phone']
 				except KeyError:
 					phone = 'N/A'
-				print(u'{0}.\t[{5}*] {1}:\t\t{2} @ \t{3}. \t\tTYPE: {4}'.format(i, business['name'], phone,
+				print(u'{0}.\t[{5}({6})]\t{1}:\t\t{2} @ \t{3}. \t\tTYPE: {4}'.format(i, business['name'], phone,
 											pretty_address(business['location']['display_address']),
-											pretty_categories(business['categories']), business['rating']))
+											pretty_categories(business['categories']), business['rating'],
+											business['review_count']))
 				i += 1
 			if len(businesses) > 0:
 				choices = get_choice('Please choose one of the above: ', 1, len(businesses))
@@ -127,6 +130,7 @@ def main():
 										business['review_count'], business['is_closed'], pretty_categories(business['categories'])))
 			else:
 				fout.write(u'{0}|-1'.format(place))
+			count += 1
 	except KeyboardInterrupt:
 		print('\n')
 	finally:
