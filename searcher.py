@@ -6,6 +6,7 @@ import json
 import yaml
 import codecs
 import geocode
+import hashlib
 
 
 def handle_choices(choices_str, min_val, max_val):
@@ -109,6 +110,13 @@ def sanitize_yelp_business(buzinezz):
 	return business
 
 
+def identify_business(business):
+	h = hashlib.sha1()
+	business['coords'] = geocode.geo_encode(business['display_address'])[0]['coords']
+	h.update(business['coords'])
+	business['uuid'] = h.hexdigest()
+
+
 def main():
 	fout = None
 	try:
@@ -156,6 +164,7 @@ def main():
 				for choice in choices:
 					buzinezz = businesses[int(choice)-1]
 					business = sanitize_yelp_business(buzinezz)
+					identify_business(business)
 					fout.write(u'{0}|{1}|{2}|{7}|{3}/5|{4}|{5}|{6}\n'.format(
 										business['name'],
 										business['display_phone'],
@@ -164,7 +173,8 @@ def main():
 										business['review_count'],
 										business['is_closed'],
 										business['categories'],
-										geocode.geo_encode(business['display_address'])[0]['coords']))
+										business['coords'],
+										business['uuid']))
 			else:
 				fout.write(u'{0}|-1'.format(place))
 			count += 1
