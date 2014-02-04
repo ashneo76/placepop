@@ -141,7 +141,8 @@ Cemitas Puebla|+1-773-772-8435|3619 W North Ave, Humboldt Park, Chicago, IL 6064
 Mercadito|+1-312-329-9555|108 W Kinzie St, Near North Side, Chicago, IL 60654|41.88942979999999,-87.6315971|3.5/5|1007|False|Mexican,Lounges|fa833a51c2e322fe94daa0c3c03450d0b92c833f
 Big Star|+1-773-235-4039|1531 N Damen, Wicker Park, Chicago, IL 60622|41.909301,-87.67718699999999|3.5/5|1734|False|Mexican,Tex-Mex|b88a0f115b51069a39dcc0930882c9855e6af27d
 Las Palmas|+1-773-289-4991|1835 W North Ave, Wicker Park, Chicago, IL 60622|41.910266,-87.673935|4.0/5|427|False|Mexican,Latin American|3d0f665da071914b6dc3162dc2fc602d6b9af4b5
-Lao Yuju|-1Ahjoomah's Apron|+1-312-326-2800|218 W Cermak Rd, Chinatown, Chicago, IL 60616|41.853203,-87.632609|3.5/5|83|False|Korean|fd1a00092c752f60dc6472b62ea0dec80370815f
+Lao Yuju|-1
+Ahjoomah's Apron|+1-312-326-2800|218 W Cermak Rd, Chinatown, Chicago, IL 60616|41.853203,-87.632609|3.5/5|83|False|Korean|fd1a00092c752f60dc6472b62ea0dec80370815f
 Ban Po Jung|+1-773-583-5209|3450 W Foster Ave, North Park, Chicago, IL 60625|41.9756971,-87.7154193|4.0/5|123|False|Korean,Barbeque|f3b1d28bfa82cc7643432563d4dd273fd02ab8d3
 San Soo Gab San|+1-773-334-1589|5247 N Western Ave, Lincoln Square, Chicago, IL 60625|41.9776126,-87.6888173|3.5/5|776|False|Korean,Seafood|fe70d3d11501894640fa7f6970800b078934f475
 Cho Sun Ok Restaurant|+1-773-549-5555|4200 N Lincoln Ave, North Center, Chicago, IL 60618|41.957978,-87.681788|4.0/5|494|False|Korean,Chicken Wings|fc845fc5b68fa59e283e3df0bca50209ffa827cd
@@ -154,7 +155,8 @@ Jin Ju|+1-773-334-6377|5203 N Clark St, Edgewater, Chicago, IL 60640|41.976408,-
 Solga|+1-773-728-0802|5828 N Lincoln Ave, West Rogers Park, Chicago, IL 60659|41.9871832,-87.7025953|3.5/5|162|False|Korean|e5b727bda3c25b1173d8223c53ba5433d0fb81e6
 Ssyal Ginseng House|+1-773-427-5296|4201 W Lawrence Ave, Albany Park, Chicago, IL 60630|41.9680989,-87.733238|4.0/5|31|False|Korean,Health Markets|04cbe10f3e9cff6bf3d5f4dd7e803035447a4a33
 Roy's|+1-312-787-7599|720 N State St, Near North Side, Chicago, IL 60654|41.895293,-87.628716|4.0/5|556|False|Asian Fusion,Hawaiian,Szechuan|da8cf46a9136614d31b25ed410e4425eaa6fc512
-D'vanti Enoteca|-1L' Patron Tacos|+1-773-252-6335|2815 W Diversey, Logan Square, Chicago, IL 60647|41.9320133,-87.698289|4.5/5|234|False|Mexican|1d56474da74d432fdea6218652cbb3c64f8704dc
+D'vanti Enoteca|-1
+L' Patron Tacos|+1-773-252-6335|2815 W Diversey, Logan Square, Chicago, IL 60647|41.9320133,-87.698289|4.5/5|234|False|Mexican|1d56474da74d432fdea6218652cbb3c64f8704dc
 Mercadito|+1-312-329-9555|108 W Kinzie St, Near North Side, Chicago, IL 60654|41.88942979999999,-87.6315971|3.5/5|1007|False|Mexican,Lounges|fa833a51c2e322fe94daa0c3c03450d0b92c833f
 Grahamwich|+1-312-265-0434|615 N State St, Near North Side, Chicago, IL 60654|41.8929411,-87.6280945|3.0/5|481|True|Sandwiches|323a8412caa991eab0f1648657fc3c2325734615
 Which Wich Superior Sandwiches|+1-312-658-0030|108 N State St, Ste 002, The Loop, Chicago, IL 60602|41.883594,-87.628299|4.0/5|79|False|Sandwiches|fc2ff96081d8b4f1641f6f49de36e4d633be3680
@@ -281,3 +283,100 @@ L' Patron Tacos|+1-773-252-6335|2815 W Diversey, Logan Square, Chicago, IL 60647
 Taqueria El Asadero|+1-773-583-5563|2213 W Montrose Ave, North Center, Chicago, IL 60618|41.9613506,-87.68442689999999|4.0/5|230|False|Mexican|2cc20b8e8828032b28ce341a53867103a237ea9d
 Patron's Hacienda|+1-312-642-2400|316 W Erie St, Near North Side, Chicago, IL 60654|41.894205,-87.636389|3.0/5|135|False|Mexican,Dance Clubs|8954885a5929f2cf5bb65ee6401d28b02e7d1792
 2 Amigos|+1-773-292-0106|2320 N Milwaukee Ave, Logan Square, Chicago, IL 60647|41.9233812,-87.69839499999999|4.0/5|74|False|Mexican|8bb0d01291be7e70ffd02ddac3b9de4ade657ed2
+The Cheesecake Factory|+1-312-337-1101|875 N Michigan Ave, Streeterville, Chicago, IL 60611|41.8988632,-87.623744|3.5/5|451|False|Desserts,American (Traditional),American (New)|b91b6ad315f12a2b22bf4a78c6a11150f3b0e9d2
+Ken Kee Restaurant|+1-312-326-2088|2129 S China Pl, Ste A, Chinatown, Chicago, IL 60616|41.8543969,-87.63327249999999|3.5/5|257|False|Chinese|66be8f779e880d3b16f22e78ce679a8f567c3bc1
+Thai Avenue|+1-773-878-2222|4949 N Broadway St, Uptown, Chicago, IL 60640|41.97300329999999,-87.6597669|4.0/5|94|False|Thai|cc9442f25263aa01f771102ef8c0f2efa5a945ba
+Pho Xe Lua|+1-773-275-7512|1021 W Argyle St, Uptown, Chicago, IL 60640|41.9732764,-87.65585329999999|3.5/5|65|False|Vietnamese|eabd27f7e493636e193c656f386393c1db4df32f
+Bánh Mì & Co.|+1-773-868-9988|3141 N Broadway, Lakeview, Chicago, IL 60657|41.9388666,-87.6443528|4.0/5|146|False|Vietnamese|46b773be134e83e540d9a0278971fd0439b18e76
+Sixty Five Chinese Restaurant|+1-312-782-6565|201 W Madison St, The Loop, Chicago, IL 60606|41.8817605,-87.6346714|3.5/5|85|False|Chinese|8579f234d800fce2d6d7c949b0655b2508a84fe8
+Lotus Cafe & Bánh Mì Sandwiches|+1-312-733-7595|719 W Maxwell St, University Village, Chicago, IL 60607|41.8645737,-87.6458928|4.5/5|123|False|Vietnamese,Sandwiches|f85bf2b3e5f2022a1b511757213cbd63059b0e66
+Dosirak|+1-312-243-9559|1514 W Taylor St, University Village, Chicago, IL 60607|41.8695189,-87.664799|3.5/5|42|False|Korean|4794d89cd941d2cd7c18ff6e1b9e155ce338af0a
+Tank Noodle Restaurant|+1-773-878-2253|4953 N Broadway, Uptown, Chicago, IL 60640|41.9730934,-87.6597232|4.0/5|985|False|Vietnamese|1dae3f004010b2178a84aca3e34f386c0e45c0d5
+Cafe Vienna|+1-773-244-9922|2523 N Clark St, Lincoln Park, Chicago, IL 60614|41.9287515,-87.6423494|4.0/5|345|False|Bakeries,Delis|3c2abed72e5920269cfcb05cc78e4f3897e2ccd3
+Vinci Restaurant|+1-312-266-1199|1732 N Halsted St, Lincoln Park, Chicago, IL 60614|41.9123275,-87.64834119999999|3.5/5|162|False|Italian,Gluten-Free|a3d1126da73242e4dc4992452d1459aea4b8a316
+Lao 18|+1-312-955-8018|18 W Hubbard, Near North Side, Chicago, IL 60654|41.890234,-87.6287626|3.0/5|39|False|Shanghainese,Dim Sum|5e89bd29b5de36d840b5ce8be7480b7643ad1003
+Harold's Chicken Shack|+1-773-752-9720|1208 E 53rd St, Hyde Park, Chicago, IL 60615|41.799825,-87.596205|3.5/5|133|False|American (Traditional),American (New)|25e10a7ff6a6accfbaf4465926bde69e33820d84
+Pequod's Pizzeria|+1-773-327-1512|2207 N Clybourn Ave, Lincoln Park, Chicago, IL 60614|41.921934,-87.66431299999999|4.0/5|1611|False|Pizza,Italian,Sandwiches|90290bc287bb225c703ce093940df794115296a9
+Kanela Breakfast Club|+1-312-255-1206|1552 N Wells St, Near North Side, Chicago, IL 60610|41.9106665,-87.63502369999999|3.5/5|75|False|Breakfast & Brunch|0404e2db7086b0b6dc5ae3f8c0cdb39a72824a77
+Native Foods Cafe|+1-312-332-6332|218 S Clark St, The Loop, Chicago, IL 60604|41.878867,-87.631168|4.5/5|237|False|Vegan,Vegetarian,Gluten-Free|410f6502fa7b61a91de918d8a40f07a2a8aea89e
+Black Dog Gelato|+1-773-235-3116|859 N Damen Ave, Ukrainian Village, Chicago, IL 60622|41.8976095,-87.67707920000001|4.0/5|376|False|Ice Cream & Frozen Yogurt,Gelato|e2335d115150ec285e902df791b91d2fcbe07889
+Scooter's Frozen Custard|+1-773-244-6415|1658 W Belmont Ave, Lakeview, Chicago, IL 60657|41.939675,-87.67089209999999|4.5/5|405|False|Ice Cream & Frozen Yogurt,Desserts|81cf65c65c3a5051657878059c73e9bf810a3afa
+Giordano's|+1-312-951-0747|730 N. Rush St., Near North Side, Chicago, IL 60611|41.8958933,-87.62569739999999|3.5/5|905|False|Restaurants|83d2773755458e90d6564fd5723824dcde6b9521
+Belly Shack|+1-773-252-1414|1912 N Western Ave, Bucktown, Chicago, IL 60647|41.91630199999999,-87.687687|4.0/5|636|False|Latin American,Korean,Asian Fusion|b8df053b8abc17a28aa926d9e69b2ed66a4264e4
+Fogo 2 Go|+1-773-880-8052|926 W Diversey Ave, Chicago, IL 60614|41.93274840000001,-87.6523891|4.0/5|243|False|Pizza,Brazilian,Fast Food|1ec1b13c8929ca78e8b3a9ed1a034cc5a5263210
+Cheesie's Pub & Grub|+1-773-388-1574|958 W Belmont Ave, Lakeview, Chicago, IL 60657|41.9399226,-87.6534669|3.5/5|534|False|Sandwiches,Pubs|e042fa0407d90e831badaecdbf76efc6edcf0131
+Take Me Out|+1-312-929-2509|1502 W 18th St, Pilsen, Chicago, IL 60608|41.858092,-87.663989|4.0/5|148|False|Chinese,Chicken Wings|ef06f652940a971c95e483aa612aa9067145c9ed
+Tierra Caliente|+1-773-772-9804|1402 N Ashland Ave, Wicker Park, Chicago, IL 60622|41.907147,-87.66785019999999|4.5/5|49|False|Grocery,Mexican|7d1a53a83cec8d9c815fd1098d956efb76d5f7a9
+Nuevo Leon Restaurant|+1-312-421-1517|1515 W 18th St, Pilsen, Chicago, IL 60608|41.857564,-87.664344|4.0/5|727|False|Mexican|d3ff89ceb88afefd2f983a0d35b32612bf85aa41
+Chicken Shack|+1-847-328-9360|1925 Ridge Ave, Evanston, IL 60201|42.0528819,-87.68743599999999|4.0/5|98|False|American (Traditional),Fast Food|6d07519224dfff763e5206f514c4ff333ae15d58
+Nesh Mediterranean Grill|+1-312-251-0144|110 S  Wells St, The Loop, Chicago, IL 60606|41.8805747,-87.6338232|3.0/5|56|False|Mediterranean|938cd198d34302509395da1f14aec98e256ba50f
+La Madia|+1-312-329-0400|59 W Grand Ave, Near North Side, Chicago, IL 60654|41.8916287,-87.63021970000001|4.0/5|728|False|Pizza,Italian|6061775e82a5b455b98070e7878e0012aee10ba3
+Lawrence Fish Market|+1-773-267-6838|3914 W Lawrence Ave, Albany Park, Chicago, IL 60625|41.9683673,-87.7261504|4.5/5|362|False|Sushi Bars|8ee1ec8376beec81729606647761e3b66f8f5dea
+BellyQ|+1-312-563-1010|1400 W Randolph St, Near West Side, Chicago, IL 60607|41.8844403,-87.6617991|3.5/5|335|False|Asian Fusion,Barbeque,Breakfast & Brunch|264dfeb8e37a9d2280b0a208a7fe46e899cff231
+Golden Bull Restaurant|+1-312-808-1668|242 W Cermak Rd, Chinatown, Chicago, IL 60616|41.853241,-87.633477|4.0/5|58|False|Chinese|3e6114631f3fbd99421888581c450b689dae3d0d
+Potsticker House|+1-312-326-6898|3139 S Halsted St, Bridgeport, Chicago, IL 60608|41.83690199999999,-87.645899|3.5/5|220|False|Chinese|23c6dfe24e20392b1a2199b9c0efd133b4c76304
+Ruxbin|+1-312-624-8509|851 N Ashland Ave, Chicago, IL 60642|41.89762289999999,-87.6671698|4.5/5|522|False|American (New)|4389144fd6aea100de03798ae5c0db834088870e
+Saucy Porka|+1-312-662-1351|400 S Financial Pl, The Loop, Chicago, IL 60605|41.8767417,-87.6331859|4.5/5|108|False|Cafes,Breakfast & Brunch,Asian Fusion|8e399baea7ad46728bfffc305ec7152929b1f095
+Fat Rice|+1-773-661-9170|2957 W Diversey Ave, Logan Square, Chicago, IL 60647|41.9320534,-87.7017271|4.0/5|158|False|Asian Fusion,Chinese|0ef4f085335854ede2cd45fbf035ed9d99a47149
+Chicago Cut Steakhouse|+1-312-329-1800|300 N Lasalle, Near North Side, Chicago, IL 60654|41.8882,-87.6331|4.0/5|456|False|Steakhouses|0d15e921bcd4fec79f019b30573f090f0c34fa63
+Tanaki|-1
+4 Little Pigs BBQ|+1-708-862-6363|940 Sibley Blvd, Calumet City, IL 60409|41.622971,-87.54839899999999|5.0/5|1|False|Barbeque|3c674d1f5a28fada0ce8db6b0008cc8380b62652
+Big Guys Sausage Stand|+1-708-317-5213|7021 Roosevelt Rd, Berwyn, IL 60402|41.864779,-87.799978|4.5/5|95|False|Fast Food|cb2c71391fac4ba52f31bba707bed000a1624f7d
+Piece Brewery and Pizzeria|+1-773-772-4422|1927 W North Ave, Wicker Park, Chicago, IL 60622|41.9104318,-87.67613829999999|4.0/5|2369|False|Pizza,Breweries|a403fb14a645c382d2e00aafafcdf0f26a26d80c
+Gaylord India Restaurant|+1-312-664-1700|100 E Walton St, Near North Side, Chicago, IL 60611|41.900246,-87.625163|4.0/5|195|False|Indian|cd787760a5d291d24d1a55e4afaefd74989713dc
+Indian Garden|+1-312-280-4910|247 E Ontario St, Ste 2, Near North Side, Chicago, IL 60611|41.8933676,-87.62108649999999|3.5/5|339|False|Indian|261e7d3f056e5a06cf28b4122a06f605c8776f40
+Panda Express|+1-773-935-6128|1730 W Fullerton Ave, DePaul, Chicago, IL 60614|41.92557499999999,-87.6724287|4.5/5|4|False|American (New)|c89a40b931291e1736f24928461b6da1b25d0fde
+OMango|+1-630-449-5100|1056 N Rt 59, Ste 100, Aurora, IL 60504|41.774966,-88.2064539|4.5/5|136|False|Indian|5df954b8f767636d2d228e38bb3098814b4cc14e
+Muscle Maker Grill|+1-847-660-7410|1673 Algonquin Rd, Rolling Meadows, IL 60008|42.0551544,-87.99920709999999|3.0/5|44|False|American (Traditional),Juice Bars & Smoothies,American (New)|c43db4f23fea7a79531583a623b0a0586420384d
+Bombay Chopsticks|+1-847-380-5775|721 W Golf Rd, Hoffman Estates, IL 60169|42.0476355,-88.0970263|3.5/5|117|False|Indian,Chinese|8eb84e3860a222a89052b8965f3a2401c6b362f2
+Smoque BBQ|+1-773-545-7427|3800 N Pulaski Rd, Ste 2, Irving Park, Chicago, IL 60641|41.9501059,-87.7275518|4.5/5|2275|False|Barbeque|388c445680dd8947f80108bc6da41c1aad5ca8d6
+The Publican|+1-312-733-9555|837 W Fulton Market, Near West Side, Chicago, IL 60607|41.8866384,-87.6487616|4.0/5|1704|False|Pubs,American (New),Breakfast & Brunch|6700251cb72dd36d1a43137793868bba0bbaf42e
+Farmhouse|+1-312-280-4960|228 W Chicago Ave, Near North Side, Chicago, IL 60654|41.8968587,-87.63540139999999|4.0/5|558|False|American (Traditional)|363918e82b9f48089d3cb3c2d1cae55f1fdd2152
+Girl & The Goat|+1-312-492-6262|809 W Randolph St, Near West Side, Chicago, IL 60607|41.88427100000001,-87.6478374|4.5/5|2698|False|American (New)|de021f1646cc4aeb70a3a3afd1ff6ce099e6103e
+RPM Italian|+1-312-222-1888|52 W Illinois St, Near North Side, Chicago, IL 60654|41.8908501,-87.63011159999999|4.0/5|857|False|Italian|d4e3ae5c45f5ed9507b0437addb0fb4cc94b52f6
+Tapas Valencia|+1-312-842-4444|1530 S State St, Near Southside, Chicago, IL 60605|41.86104700000001,-87.628152|4.0/5|285|False|Tapas Bars,Spanish|07aa66b840a3c846b7a26d552b1992fc4be9154e
+Chipotle Mexican Grill|+1-312-587-7753|291 E Ontario St, Near North Side, Chicago, IL 60611|41.8933002,-87.6206538|3.5/5|58|False|Mexican|38b4e222e8443f7bb256c8033794d9037c1fe168
+Chiu Quon Bakery|+1-312-225-6608|2242 S Wentworth Ave, Chinatown, Chicago, IL 60616|41.851629,-87.63221999999999|4.0/5|96|False|Bakeries|678267f582d2a9bbb000d70d783c37dd0bb48170
+Arya Bhavan|+1-773-274-5800|2508 W Devon Ave, West Rogers Park, Chicago, IL 60659|41.99795100000001,-87.692798|3.5/5|125|False|Indian|2d459033803dddfb88c21217dcf18b8501bec13b
+Mysore Woodlands|+1-773-338-8160|2548 W Devon Ave, West Rogers Park, Chicago, IL 60659|41.997924,-87.694339|4.0/5|112|False|Vegetarian,Indian|c1e1f163502bfdb2b044906e3b066d2fb1fb2d91
+El Pollo Feliz|+1-773-284-7228|7025 S Pulaski Rd, West Lawn, Chicago, IL 60629|41.765168,-87.722053|4.0/5|14|False|Mexican,Food Delivery Services|30b07cda3bb8087fb4b216359b4a739d4f3b37e9
+Cemitas Puebla|+1-773-772-8435|3619 W North Ave, Humboldt Park, Chicago, IL 60647|41.9096704,-87.7175752|4.0/5|691|False|Mexican|384a69f6a5715efaa28fb897d4d6c4ac62eee87d
+Joy Yee's Noodle Shop|+1-312-328-0001|2139 S China Pl, Chinatown, Chicago, IL 60616|41.854113,-87.63388540000001|3.5/5|762|False|Vietnamese,Chinese,Japanese|1c8b93e57b9475f93ebe65ed842d93bcf4dccc0a
+Phoenix Restaurant|+1-312-328-0848|2131 S Archer Ave, Chinatown, Chicago, IL 60616|41.853523,-87.632847|3.5/5|398|False|Chinese|38d3ad41f28540c22d2cb8824d990dff1e349c25
+Great Beijing|+1-847-673-5588|6717 N Lincoln Ave, Lincolnwood, IL 60712|42.003752,-87.727559|3.5/5|109|False|Chinese,Korean|67d6a424066472420b1da5e4e9af73e5c7db9ea4
+So Gong Dong Tofu House|+1-773-539-8377|3307 W Bryn Mawr Ave, North Park, Chicago, IL 60659|41.98278,-87.71166|3.5/5|77|False|Korean|137eb1e678205e3d2e5c14083c32055ec115152d
+San Soo Gab San|+1-773-334-1589|5247 N Western Ave, Lincoln Square, Chicago, IL 60625|41.9776126,-87.6888173|3.5/5|776|False|Korean,Seafood|fe70d3d11501894640fa7f6970800b078934f475
+Urbanbelly|+1-773-583-0500|1400 W Randolph St, Near West Side, Chicago, IL 60607|41.8844403,-87.6617991|4.0/5|31|False|Asian Fusion|264dfeb8e37a9d2280b0a208a7fe46e899cff231
+Belly Shack|+1-773-252-1414|1912 N Western Ave, Bucktown, Chicago, IL 60647|41.91630199999999,-87.687687|4.0/5|636|False|Latin American,Korean,Asian Fusion|b8df053b8abc17a28aa926d9e69b2ed66a4264e4
+Golden Steer Steakhouse|+1-708-771-7798|7635 Roosevelt Rd, Forest Park, IL 60130|41.8650426,-87.8157031|4.0/5|125|False|Steakhouses|7ba73a6d4ece698a1f548d17aecf01e81d069b93
+Cool Mirchi|+1-630-529-0999|814 E Nerge Rd, Roselle, IL 60172|41.99885769999999,-88.060127|3.5/5|28|False|Indian,Pakistani|5b5a0e8030f3063445498ff94880f06016fe2d49
+Bites Asian Tapas|+1-773-270-5972|3313 N Clark St, Lakeview, Chicago, IL 60657|41.942212,-87.65209|4.5/5|32|False|Tapas/Small Plates,Asian Fusion|7a1e449a8f7d6872a368bac8452476ab819ee4b3
+Satazza|-1
+Halo Asian Mix|+1-312-360-1111|29 E Adams St, The Loop, Chicago, IL 60603|41.8794596,-87.62664939999999|4.0/5|120|False|Asian Fusion,Filipino,Hawaiian|97d8dbf48f31ba6d96f9a7643dbb5661cab5b362
+Asian Outpost|+1-312-662-1100|1315 S Wabash Ave, Near Southside, Chicago, IL 60605|41.865185,-87.6255671|4.5/5|27|False|Chinese,Sushi Bars,Asian Fusion|33149aea853ad8d6779f125b288299e2181441d3
+Jimmy's Pizza Café|+1-773-293-6992|5159 N Lincoln Ave, Lincoln Square, Chicago, IL 60625|41.9757404,-87.69229519999999|4.5/5|186|False|Pizza,Cafes|746c1125c994befc023b47d82ae458a0da382fd8
+The Art of Pizza|+1-773-327-5600|3033 N Ashland Ave, Lakeview, Chicago, IL 60657|41.9370799,-87.668161|4.0/5|771|False|Pizza,Italian|135374bafc54954594fc01332024d63605d0ff1e
+Armitage Pizzeria|+1-312-867-9111|711 W Armitage Ave, Lincoln Park, Chicago, IL 60614|41.9181276,-87.6466203|4.5/5|89|False|Pizza|556484ade45a10f2f6159bdcba227d9107133233
+Primos Chicago Pizza Pasta|+1-312-243-1052|816 W Van Buren St, Near West Side, Chicago, IL 60607|41.87666,-87.6481149|4.0/5|72|False|Pizza,Italian,Sandwiches|a2eaead1fc38448d01bdfb6484f50f7b35a2f204
+Apart Pizza Company|+1-773-784-1550|5624 N Broadway Ave, Edgewater, Chicago, IL 60660|41.98455879999999,-87.660134|3.5/5|217|False|Pizza|5043c7739e9561ab3da789477cd455b8c753749d
+Jimmy's Red Hots|+1-773-384-9513|4000 W Grand Ave, Humboldt Park, Chicago, IL 60651|41.906619,-87.72669599999999|4.0/5|142|False|Hot Dogs|f781b517b37bfe2b36f105802973f12d920df581
+Cooper's|+1-773-929-2667|1232 W Belmont Ave, Lakeview, Chicago, IL 60657|41.9399346,-87.6602715|4.0/5|246|False|Bars,American (New),Pizza|72e23ea55ab5333f6c659379e13f7130b77156f2
+Panino's|+1-773-472-6200|3702 N Broadway St, Lakeview, Chicago, IL 60613|41.9492041,-87.6484179|4.0/5|179|False|Pizza,Italian|789e5f66edc46e152dc5bbfe0f93342abe29522b
+Super H Mart|+1-847-581-1212|801 Civic Center Dr, Niles, IL 60714|42.0239591,-87.8014903|4.5/5|304|False|Grocery,Ethnic Food|4e00d3bac63b1ffd09995bab489a4a1c69c1ee9d
+Pizzeria Serio|+1-773-525-0600|1708 W Belmont Ave, Lakeview, Chicago, IL 60657|41.9396674,-87.6715037|4.0/5|211|False|Pizza|d6369985f229d082f25c468cf050acb19f60d751
+DMK Burger Bar|+1-773-360-8686|2954 N Sheffield Ave, Lakeview, Chicago, IL 60657|41.9360594,-87.6541475|4.0/5|1218|False|Burgers|cde423bf3290b6b21e4aaf7e200e77ebf305045c
+Burger Bar Chicago|+1-312-255-0055|1578 N Clybourn Ave, Near North Side, Chicago, IL 60642|41.910138,-87.648904|4.0/5|579|False|Burgers,Bars|c2d499d8d320f76a190af954ec698f6df0f0d2e3
+Fatty's Burgers & More|+1-773-248-3288|2665 N Clark St, Lincoln Park, Chicago, IL 60614|41.9308855,-87.643991|4.5/5|149|False|Burgers|511f442e8ac3c5e7daa2b63d1ec586012a035540
+25 Degrees|+1-312-943-9700|736 N Clark St, Near North Side, Chicago, IL 60654|41.895958,-87.63159999999999|4.0/5|331|False|Burgers|62fe235d866bcfe82eeee8a9ec4d0f400401501d
+Duke's Bar & Grill|+1-773-248-0250|2616 N Clark St, Lincoln Park, Chicago, IL 60614|41.9299689,-87.6438877|4.0/5|205|False|Bars,American (Traditional),Burgers|0b957f5e3344e537cd6ba4f5eb516fb0357a9a98
+Kuma's Corner|+1-773-604-8769|2900 W Belmont Ave, Avondale, Chicago, IL 60618|41.939642,-87.70043100000001|4.0/5|3748|False|Pubs,Burgers|c0eb53a945d4e5e917e26a2397b0a82f73438acd
+Rockit Burger Bar|+1-773-645-4400|3700 N Clark St, Lakeview, Chicago, IL 60613|41.949128,-87.658354|3.5/5|308|False|American (Traditional),Karaoke,Burgers|bce1988d2b2660e16a4a8da5f21e725e36f18b9b
+Twin Anchors Restaurant & Tavern|+1-312-266-1616|1655 N Sedgwick St, Lincoln Park, Chicago, IL 60614|41.912687,-87.638328|4.0/5|418|False|American (Traditional),Barbeque|feb20e73550c5e6cf75ff8e35e08db21f7a74470
+Nookies|+1-312-337-2454|1746 N Wells St, Lincoln Park, Chicago, IL 60614|41.9142692,-87.635125|4.0/5|341|False|Breakfast & Brunch,Burgers,American (Traditional)|3b0e1474834b13a7d4a86f7e79fce34c4bf012a4
+5 Boroughs Pizza and Subs|+1-312-988-9009|1543 N Sedgwick St, Near North Side, Chicago, IL 60610|41.9106172,-87.6383032|3.5/5|113|False|Pizza|cd0108ac53619db80927caf75b9e2189f7811333
+Slow city (mak guhl lee)|-1
+Union Sushi + Barbeque Bar|+1-312-662-4888|230 W Erie St, Near North Side, Chicago, IL 60654|41.89420459999999,-87.6353784|4.0/5|434|False|Japanese,Sushi Bars,Barbeque|19715c3b0cd39b538cfa211283feb42dd834271c
+Butterfly Sushi Bar & Thai Cuisine|+1-312-563-5555|1156 W Grand Ave, Near West Side, Chicago, IL 60642|41.891341,-87.65681699999999|4.0/5|649|False|Thai,Sushi Bars|5f87bdd358cd584bfae3b4ef31887e6a6daba928
+Seadog Sushi Bar|+1-773-235-8100|1500 W Division St, Noble Square, Chicago, IL 60642|41.9033717,-87.6650647|4.0/5|277|False|Sushi Bars,Japanese,Seafood|72a59fccfe606631165f706a22c4de551cfc6821
+Kai Sushi|+1-312-583-0567|1255 S State St, Near Southside, Chicago, IL 60605|41.866433,-87.626953|4.5/5|49|False|Sushi Bars,Japanese|555b1b01152c40a08a37786a5c61b1caecb28b40
+Ukai Japanese Restaurant|+1-773-868-9900|1059 W Belmont Avenue, Lakeview, Chicago, IL 60657|41.9397978,-87.65639|4.0/5|231|False|Japanese,Sushi Bars|4a055a8cce7bb0e776b119f2c21733038ee6c15a
